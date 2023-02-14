@@ -21,6 +21,14 @@ namespace MVC.Controllers
         {
             return View();
         }
+        public IActionResult Registation()
+        {
+            return View();
+        }
+        public IActionResult Reset()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
