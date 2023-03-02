@@ -1,0 +1,1139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/platform.css">
+    <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar" id="List">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src=".\..\images\Assets\user-img.png" class="rounded-circle" style="width:50px;height:50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src=".\..\images\Assets\list.png">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="dropdown" data-bs-toggle="dropdown"
+                                style="text-decoration: none; color: #333333;">Policy
+                                <img src=".\..\images\Assets\drop-down.png"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="dropdown" data-bs-toggle="dropdown"
+                                style="text-decoration: none; color: #333333;">Evan Donohue
+                                <img src=".\..\images\Assets\drop-down.png"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar nav" id="Main">
+            <div class="col-lg-2 pt-3">
+                <p class="text-end">Stories</p>
+            </div>
+            <div class="dropdown col-lg-6 ">
+                Policy
+                <button class=" dropdown" type="button" data-bs-toggle="dropdown"
+                    style="border:none; background-color:white;"><img src=".\..\images\Assets\drop-down.png">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                </ul>
+
+            </div>
+
+            <div class="dropdown col-lg-3 text-end">
+                <div>
+                    <img src=".\..\images\Assets\user-img.png" data-bs-toggle="dropdown"
+                        style="border-radius: 50%; width:50px;height:50px">
+                    <span>Evan Donohue</span>
+
+                    <button class=" dropdown profile" type="button-item" data-bs-toggle="dropdown-menu"
+                        style="border:none;background-color: white;"><img
+                            src=".\..\images\Assets\drop-down.png"></button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav></div>
+
+        <div class="container-fluid">
+            <div class="row border-top  filters-section d-flex align-items-center flex-wrap justify-content-center">
+                <div class="col-lg-2">
+    
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-2 border-end justify-content-center">
+                    <div>
+                        <a href="#" style="text-decoration: none;color:gray;  background-color: rgb(245, 244, 244);
+                        ">
+                            <img src=".\..\images\Assets\search.png"><input type="text" placeholder="Search Mission..."
+                                style="border:none;"></a>    
+                    </div>
+                </div>
+                
+    
+                   
+                <div class="col-lg-1 col-md-3 col-sm-6  border-end border-start border-top country">
+                    <div class="dropdown">
+                        <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Country &emsp;&ensp;<img src=".\..\images\Assets\drop-down.png">
+                        </a>
+    
+                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuLink">
+                        </label>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="India" id="flexCheckDefault">
+                        <label class="form-check-label " for="flexCheckDefault">
+                            India
+                        </label><br>
+                        <input class="form-check-input ms-1 ms-1 checkbox" type="checkbox" value="Canada"
+                            id="flexCheckDefault">
+                        <label class="form-check-label " for="flexCheckDefault">
+                            Canada
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="Austalia" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Austalia
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="USA" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            USA
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="Pakistan" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Pakistan
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="China" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            China
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="Russia" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Russia
+                        </label><br>
+                        <input class="form-check-input ms-1 checkbox" type="checkbox" value="Shrilanka" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Shrilanka
+                        </label><br>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6  border-end border-start border-top country">
+                    <div class="dropdown">
+                        <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            City &emsp;&ensp;<img src=".\..\images\Assets\drop-down.png">
+                        </a>
+    
+                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuLink">
+                            </label>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Ahmedabad" id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Ahmedabad
+                            </label><br>
+                            <input class="form-check-input ms-1 ms-1 checkbox" type="checkbox" value="Mehsana"
+                                id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Mehsana
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Delhi" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Delhi
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Rajkot" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rajkot
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Bombay" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Bombay
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Udaipur" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Udaipur
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Lonavala" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Lonavala
+                            </label><br>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Bharuch" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Bharuch
+                            </label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6  border-end border-start border-top country">
+                    <div class="dropdown">
+                        <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Theme &emsp;&ensp;<img src=".\..\images\Assets\drop-down.png">
+                        </a>
+    
+                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuLink">
+                            </label>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme1" id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Theme1
+                            </label><br><input class="form-check-input ms-1 ms-1 checkbox" type="checkbox" value="Theme2"
+                                id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Theme2
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme3" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme3
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme4" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme4
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme5" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme5
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme6" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme6
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme7" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme7
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Theme8" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Theme8
+                            </label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6  border-end border-start border-top country">
+                    <div class="dropdown">
+                        <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Skills &emsp;&ensp;<img src=".\..\images\Assets\drop-down.png">
+                        </a>
+    
+                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuLink">
+                            </label>
+                            <input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill1" id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Skill1
+                            </label><br><input class="form-check-input ms-1 ms-1 checkbox" type="checkbox" value="Skill2"
+                                id="flexCheckDefault">
+                            <label class="form-check-label " for="flexCheckDefault">
+                                Skill2
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill3" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill3
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill4" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill4
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill5" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill5
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill6" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill6
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill7" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill7
+                            </label><br><input class="form-check-input ms-1 checkbox" type="checkbox" value="Skill8" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skill8
+                            </label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+    
+                </div>
+    
+                <hr>
+            </div>
+            </div>
+       
+        <div class="container">
+        <div class="row" id="grid">
+            <div class="col-lg-8 col-md-7 col-sm-6  mt-4">
+                <p class="explore">Explore <big>72 Mission</big> </p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 mt-4 d-none d-lg-block">
+
+                <a class=" dropdown" type="button" data-bs-toggle="dropdown"
+                    style="border: 1px solid gray; color:black;text-decoration: none;width: 180px;">Sort by &emsp;&ensp;<img
+                        src=".\..\images\Assets\drop-down.png">
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-1 mt-3 text-end d-none d-lg-block">
+
+                &ensp;<a href="#" class="btn btn-grid"><img src=".\..\images\Assets\grid.png" alt=""
+                        style="padding: 7px;background-color: rgb(212, 212, 212);border-radius: 50%;"></a>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-1 mt-3 text-center d-none d-lg-block">
+                <a href="#" class="btn btn-list"><img src=".\..\images\Assets\list.png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div class="container grid-container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                class="card-img-top image" alt="...">
+                            <button class="btn text" id="overlap">Environment</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Toronto
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                            <!-- <p class="ps-1 pe-1" style="border-radius: 20px; background-color: white;">Environment
+                            </p> -->
+                        </div>
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Grow Trees-On the path to environment sustainability
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+
+                            <div class="d-flex justify-content-between">
+
+                                <div class="text">
+                                    <p>Tree Canada</p>
+                                </div>
+                                <div class="star">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            
+                             
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">From
+                                                10/01/2019 until 25/02/2019
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+    
+                                        <div class="d-flex">
+                                            <div class="col-lg-3">
+                                                <img src=".\..\images\Assets\Seats-left.png" alt="">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p>10 <br> Seats Left</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="deadline ">
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src=".\..\images\Assets\Deadline.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p>09/01/2019 <br> Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Children</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Melbourne
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Education Supplies for Every Pair of shoes sold
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Austalian Paradise</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">From
+                                                10/01/2019 until 25/02/2019
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Already-volunteered.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>250 <br> Already volenteered</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Deadline.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>09\01\2019 <br> Deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Nourish-the-Children-in--African-country.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Nutrition</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Barcelona
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Nourish the Children in African City
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>The Hunger</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">Ongoing Opportunity
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Seats-left.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>10 <br> Seats Left</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Deadline.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>09/01/2019 <br> Deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Environment</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                London
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">CSR initiative stands for Coffee and Farmer Equity
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="col-lg-7 ms-0 pe-5">
+                                    <p>CSE Network</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">Ongoing Opportunity
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="col-lg-12">
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Already-volunteered.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>250 <br> Already volenteered</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Animal-welfare-_-save-birds-campaign.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Animals</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Cape Town
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Animal welfire & save birds Campaign
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>JR Foundation</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">Plant 10,000 Trees
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-5">
+
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <img src=".\..\images\Assets\Seats-left.png" alt="">
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p>10 <br> Seats Left</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="d-flex">
+
+                                        <div class="col-lg-2">
+                                            <img src=".\..\images\Assets\Achieved.png" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar"
+                                                    style="width: 75%;background-color: #F88634;" aria-valuenow="75"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div> <br> 8000 Achieved
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Plantation-and-Afforestation-programme.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Health</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Paris
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Plantation and Afforestation programme
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Amaze Doctors</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">Plant 10,000 Trees
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-7">
+                                <div class="d-flex">
+                                    <div class="col-lg-2">
+                                        <img src=".\..\images\Assets\Achieved.png" alt="">
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 75%;background-color: #F88634;" aria-valuenow="75"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div> <br> 8000 Achieved
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                class="card-img-top image img7" alt="...">
+                            <button class="btn text" id="overlap">Education</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                New York
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-1">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Grow Trees-On the path to environment sustainability
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit.
+                                Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam <br> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                elit. Dolorum
+                                Perspiciatis nisi modi eaque, soluta <br>
+                                voluptate nemo aspernatur ab corrupti recusandae <br> temporibus ipsa omnis harum
+                                officia....
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Tree Canada</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 40%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">View
+                                        Details
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Children</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Sydney
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Education Supplies for Every Pair of shoes sold
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Austalian Paradise</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                          
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">From
+                                                10/01/2019 until 25/02/2019
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Already-volunteered.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>250 <br> Already volenteered</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Deadline.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>09/01/2019 <br> Deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src=".\..\images\Assets\Nourish-the-Children-in--African-country.png"
+                                class="card-img-top image img2" alt="...">
+                            <button class="btn text" id="overlap">Nutrition</button>
+                            <div class="position-absolute location px-2 py-1">
+                                <img src=".\..\images\Assets\pin.png" alt="">
+                                Berlin
+                            </div>
+                            <div class="position-absolute heart px-2 py-1">
+                                <img src=".\..\images\Assets\heart.png" alt="">
+                            </div>
+                            <div class="position-absolute doc px-2 py-1">
+                                <img src=".\..\images\Assets\user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p style="font-size: 30px;color: rgb(61, 61, 61);">Nourish the Children in African City
+                                </p>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                                nisi amet,
+                                adipisci tenetur totam... </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>The Hunger</p>
+                                </div>
+                                <div>
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\selected-star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+                                    <img src=".\..\images\Assets\star.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="border-top mt-4">
+                                <div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="star">
+                                            <p class="text-center" style="border: 1px solid gray;border-radius:20px;padding:0px 15px 0px 15px ;">Ongoing Opportunity
+                                                
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Seats-left.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>10 <br> Seats Left</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src=".\..\images\Assets\Deadline.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>09/01/2019 <br> Deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+
+                                    <button type="button" class="btn" id="login"
+                                        style="width: 30%;border-radius: 20px;border:2px solid #F88634;color: #F88634;">Apply
+                                        &ensp;<img src=".\..\images\Assets\right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center mt-5 mb-5">
+                        <li class="page-item">
+                            <a class="page-link ms-2 me-2" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">
+                                < </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active ms-2 me-2" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link ms-2 me-2" href="#">></a></li>
+
+                        <li class="page-item">
+                            <a class="page-link ms-2 me-2" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+                <hr>
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="copyright-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cookies Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms of use</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 rights">
+                                <span> © 2019 optimy.com. All Right Reserved </span>
+                            </div>
+                            <!-- End Col -->
+
+                            <!-- End col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Copyright Container -->
+                </div>
+            </div>
+                
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                    crossorigin="anonymous"></script>
+                <script src="~/js/platform.js"></script>
+                   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="~/js/landingPage.js"></script>
+
+
+</body>
+
+</html>
